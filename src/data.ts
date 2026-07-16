@@ -118,14 +118,14 @@ export const projects: ProjectItem[] = [
   },
   {
     id: 'proj5',
-    title: 'Yelp Customer Analytics Project',
+    title: "McDonald's Data Analysis",
     period: '',
-    description: 'Developed a customer analytics project using the Yelp dataset, leveraging Databricks and Python to process and analyze large-scale business, check-in, and review data. Implemented DistilBERT-based sentiment analysis to evaluate customer feedback and identify service-related trends. Built Power BI dashboards to visualize customer behavior patterns, sentiment insights, and key business metrics, enabling data-driven decision-making.',
+    description: "Developed a customer analytics project analyzing McDonald's data from the Yelp public dataset, leveraging Databricks, Polars, and Python to process and analyze large-scale business, check-in, and review data. Implemented DistilBERT-based sentiment analysis to evaluate customer feedback and identify service-related trends. Built interactive Power BI dashboards to visualize customer behavior patterns, sentiment insights, and key business metrics, enabling data-driven decision-making.",
     highlights: [],
-    techStack: ['Databricks', 'Python', 'DistilBERT', 'Power BI', 'Sentiment Analysis', 'Data Analytics'],
+    techStack: ['Databricks', 'Python', 'Polars', 'DistilBERT', 'Power BI', 'Sentiment Analysis', 'Data Analytics'],
     metrics: undefined,
     category: 'analytics',
-    githubUrl: 'https://github.com/aakshatha02/Yelp-Customer-Analytics'
+    githubUrl: 'https://github.com/aakshatha02/McDonald-s-Data-Analysis'
   },
   {
     id: 'proj6',
