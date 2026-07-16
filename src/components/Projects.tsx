@@ -135,7 +135,7 @@ export default function Projects() {
         >
           <AnimatePresence mode="popLayout">
             {filteredProjects.map((proj) => (
-              <motion.article
+              <motion.a
                 layout
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -143,7 +143,10 @@ export default function Projects() {
                 transition={{ duration: 0.25 }}
                 key={proj.id}
                 id={`project-card-${proj.id}`}
-                className="bg-white rounded-3xl border border-slate-100 hover:border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between overflow-hidden group"
+                href={proj.githubUrl || '#'}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white rounded-3xl border border-slate-100 hover:border-indigo-200/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between overflow-hidden group cursor-pointer text-left decoration-transparent"
               >
                 {/* Visual Accent Top Bar */}
                 <div className="h-1.5 w-full bg-gradient-to-r from-indigo-500/80 to-emerald-500/80" />
@@ -161,16 +164,12 @@ export default function Projects() {
                         </span>
                       )}
                       {proj.githubUrl && (
-                        <a
-                          href={proj.githubUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="p-1.5 text-slate-400 hover:text-indigo-600 hover:bg-indigo-50 border border-transparent hover:border-indigo-100 rounded-xl transition-all"
+                        <div
+                          className="p-1.5 text-slate-400 group-hover:text-indigo-600 group-hover:bg-indigo-50 border border-transparent group-hover:border-indigo-100 rounded-xl transition-all"
                           title="View Repository"
-                          onClick={(e) => e.stopPropagation()}
                         >
                           <Github className="w-4 h-4" />
-                        </a>
+                        </div>
                       )}
                     </div>
                   </div>
@@ -199,7 +198,7 @@ export default function Projects() {
                     ))}
                   </div>
                 </div>
-              </motion.article>
+              </motion.a>
             ))}
           </AnimatePresence>
         </motion.div>
