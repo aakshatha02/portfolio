@@ -236,7 +236,7 @@ export default function Hero() {
                   </div>
                   <div>
                     <p className="text-xs text-slate-400 font-mono">Languages</p>
-                    <p className="font-semibold text-slate-800">English (C1), Deutsch (B1)</p>
+                    <p className="font-semibold text-slate-800">English (C1), Kannada (C1), Hindi (B2), Deutsch (B1)</p>
                   </div>
                 </div>
 
